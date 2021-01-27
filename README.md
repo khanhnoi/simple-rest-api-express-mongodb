@@ -155,8 +155,6 @@ router.get("/:id", async (req, res) => {
 //@routes POST api/posts
 //@desc Create An Post - Thêm 1 post
 router.post("/", async (req, res) => {
-  //   res.send(`let's create post`);
-  //   console.log(req.body);
   const newPost = new Posts(req.body);
 
   try {
